@@ -1,0 +1,14 @@
+{
+    "name": "demo-2",
+    "version": "1.0.0",
+    "description": "koa-demo",
+    "main": "index.js",
+    "author": "tks",
+    "license": "MIT",
+    "devDependencies": {
+        "koa": "^2.11.0",
+        "koa-bodyparser": "^4.2.1",
+        "koa-router": "^7.4.0",
+        "require-directory": "^2.1.1"
+    }
+}
