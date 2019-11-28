@@ -1,8 +1,11 @@
 const koa = require("koa");
 const fs = require("fs");
-const app = new koa();
+const path = require('path')
+const static  = require('koa-static')
 const Router = require("koa-router");
 const bodyParser = require("koa-bodyparser");
+
+const app = new koa();
 const router = new Router();
 
 // const index = require("./router");
@@ -35,6 +38,9 @@ app.use(router.routes(), router.allowedMethods());
 //   module(app)
 // })
 app.use(bodyParser);
+app.use(static(
+  path.join(__dirname,'./static')
+))
 
 const port = 4002;
 const http = "http://127.0.0.1";

@@ -6,9 +6,12 @@
     "author": "tks",
     "license": "MIT",
     "devDependencies": {
+        "egg.js": "^1.0.0",
         "koa": "^2.11.0",
         "koa-bodyparser": "^4.2.1",
         "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0",
+        "koa-views": "^6.2.1",
         "require-directory": "^2.1.1"
     }
 }
