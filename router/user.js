@@ -3,7 +3,8 @@ const user = new Router()
 
 user.get('/login', async (ctx, next) => {
     ctx.response.status = 200
-    ctx.response.body = 'user login'
+    // ctx.response.body = 'user login'
+    await ctx.render('user/login')
 })
 
 user.get('/user', async (ctx, next) => {
