@@ -1,23 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../public/header.html') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="images/hi-32.png">
-    <title>login</title>
-</head>
+    <body>
+        <!-- <form action="/api/login" method="post" onsubmit="return login()"> -->
+        <!-- <form action="/api/login" method="post" onsubmit=""> -->
+        <div>
+            <input type="text" name="name" id="name" placeholder="账号">
+        </div>
+        <div>
+            <input type="password" name="psd" id="psd" placeholder="密码">
+        </div>
+        <button onclick="login()">提交</button>
+        <!-- <button type="submit">提交</button> -->
+        <!-- </form> -->
 
-<body>
-    <div>
-        <input type="text" name="" id="name" placeholder="账号">
-    </div>
-    <div>
-        <input type="password" id="psd" placeholder="密码">
-    </div>
-    <button onclick="submit()">提交</button>
-</body>
-<script src="js/user.js"></script>
-
-</html>
+    </body>
+    <%- include('../public/footer.html') %>
+        <script src="/js/user.js"></script>
