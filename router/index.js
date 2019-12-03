@@ -1,11 +1,13 @@
 const Router = require("koa-router");
-const index = new Router();
+const router = new Router();
+const home = require("./routes/home");
+const user = require("./routes/user");
+// 页面路由
+router.use(home.routes(), home.allowedMethods());
+router.use("/user", user.routes(), user.allowedMethods());
 
-index.get("/", async (ctx, next) => {
-  ctx.response.status = 200;
-  // ctx.response.body = "index";
-  await ctx.render('home/index')
-  // await next()
-});
+const userApi = require("./api/user");
+// API接口
+router.use("/api", userApi.routes(), userApi.allowedMethods());
 
-module.exports = index;
+module.exports = router;

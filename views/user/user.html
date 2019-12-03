@@ -1,0 +1,18 @@
+<%- include('../public/header.html') %>
+
+    <body>
+        <p>user info page</p>
+        <p>userId:
+            <%= userInfo.id %>
+        </p>
+        <p>name:
+            <%= userInfo.name %>
+        </p>
+        <p>nick:
+            <%= userInfo.nick %>
+        </p>
+        <a href="/user/task">To Task Page</a>
+        <button onclick="logout()">注销</button>
+    </body>
+    <%- include('../public/footer.html') %>
+        <script src="/js/user.js"></script>
