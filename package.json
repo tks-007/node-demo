@@ -12,7 +12,7 @@
         "babel-register": "^6.26.0",
         "egg.js": "^1.0.0",
         "es-checker": "^1.4.2",
-        "jsonwebtoken": "^8.5.1",
+        "jsonwebtoken": "^9.0.0",
         "koa": "^2.11.0",
         "koa-bodyparser": "^4.2.1",
         "koa-cookie": "^1.0.0",
